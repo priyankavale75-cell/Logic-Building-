@@ -1,0 +1,30 @@
+//input : 12  2     output :    true
+//input : 12  3    output :     true
+//input : 12  5     output :    false
+//input : 12  12     output :   true
+//input : 12  7     output :    false
+
+
+#include<stdio.h>
+
+int main()
+{
+    int iValue1 = 0, iValue2 =0;
+
+    printf("enter first number : \n");
+    scanf("%d",&iValue1);
+
+    printf("enter second number : \n");
+    scanf("%d",&iValue2);
+
+    if((iValue1 % iValue2) == 0)
+    {
+        printf("It is completely divisible\n");
+    }
+    else
+    {
+        printf("It is not divisible\n");
+    }
+
+    return 0;
+}
